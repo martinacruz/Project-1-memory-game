@@ -1,0 +1,16 @@
+Biggest hurdels:
+Complete trash at html&css (for now)
+Creativity (need interesting theme for game)
+
+
+Day 1:
+Complete bare bones HTML (will look lke wireframe)
+Complete any needed CSS
+
+Day 2:
+Begin JS functionality
+    -randomize color (when page opens)
+    -clicking boxes
+    -colors appear and stay showing
+    -match colors
+    -

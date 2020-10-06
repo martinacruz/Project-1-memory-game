@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+#game {
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 2px solid lime;
+}
+
+#header {
+    /* top bar */
+    display: flex;
+    flex-direction: row;
+    flex;
+    border: 1px solid blue;
+    background-color: rosybrown;
+}
+
+button {
+    position: absolute;
+    z-index: auto;
+    right: 100px;
+}
+
+.frontCard, .backCard {
+    border: 10px solid red
+}
+
+
+
+img {
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+}
+
+#info {
+    /* instruction BUTTON */
+}
+
+#LVL {
+    /* increase lvl BUTTON */
+}
+
+#reset {
+    /* start game over BUTTON */
+}
+
