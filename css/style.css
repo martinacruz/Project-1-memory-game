@@ -1,51 +1,63 @@
 * {
     box-sizing: border-box;
-    
+    padding: 0;
+    margin: 0;
 }
 
-#game {
-    height: 100vh;
-    display: flex;
-    flex-wrap: nowrap;
-    border: 2px solid lime;
+html {
+    background-color: grey;
 }
 
 #header {
     /* top bar */
     display: flex;
     flex-direction: row;
-    flex;
     border: 1px solid blue;
     background-color: rosybrown;
 }
 
 button {
-    position: absolute;
+    position: relative;
     z-index: auto;
-    right: 100px;
+    left: 40%;
 }
 
-.frontCard, .backCard {
-    border: 10px solid red
+#game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    justify-content: center;
+    align-content: center;
+    perspective: 1000px;
+    }
+
+.backFace {
+    position: relative;
+    left: 185px;
 }
 
+.cards {
+    transform-style: preserve-3d;
+    transition: 1.5s;
+}
+
+.backFace, .frontFace {
+    backface-visibility: hidden;
+}
+
+.cards.flipped {
+    transform: rotateY(180deg);
+}
+
+.frontFace {
+    transform: rotateY(180deg);
+}
 
 
 img {
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 180px;
     border: 2px solid red;
 }
-
-#info {
-    /* instruction BUTTON */
-}
-
-#LVL {
-    /* increase lvl BUTTON */
-}
-
-#reset {
-    /* start game over BUTTON */
-}
-
