@@ -14,3 +14,13 @@ Begin JS functionality
     -colors appear and stay showing
     -match colors
     -
+
+
+
+    ------------REDO------------
+    Go with original array plan
+        -remove all the divs and img tags from HTML
+        -create array contining card info objects
+        create an empty array to hold 'selected/clicked' cards
+        to use when comparing
+        -TRY and maintain flips and use of class and id's from original css
